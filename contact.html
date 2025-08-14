@@ -23,14 +23,11 @@
     <section class="contact">
       <h1>Contact Us</h1>
       <p>Have questions or want to enroll? Get in touch with us!</p>
-      <form name="contact" method="POST" data-netlify="true" class="contact-form" netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="contact" />
-        <p style="display:none">
-          <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-        </p>
+      <form action="https://formspree.io/f/mwpqzblv" method="POST" class="contact-form">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <input type="hidden" name="_subject" value="New Contact Form Submission" />
         <button type="submit" class="btn">Send Message</button>
       </form>
     </section>
