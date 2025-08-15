@@ -123,9 +123,6 @@ header nav ul li a.active {
   box-shadow: 0 6px 12px rgb(0 0 0 / 0.15);
 }
 
-
-
-
 .aboutus {
   padding: 1rem 1.5rem;
   max-width: 300px;
@@ -135,6 +132,7 @@ header nav ul li a.active {
   border-radius: 12px;
   margin-bottom: 2rem;
   box-shadow: 0 6px 12px rgb(0 0 0 / 0.15);
+  color: #fbbf24;
 }
 .aboutit {
   margin: 2rem auto 2rem auto;
@@ -144,6 +142,7 @@ header nav ul li a.active {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   box-shadow: 0 6px 12px rgb(0 0 0 / 0.15);
+  color: #fbbf24;
 }
 
 .about h2,
@@ -194,9 +193,32 @@ footer {
   
 }
 
-    
+ .contact ul {
+  list-style: none; /* Removes default bullets */
+  padding: 0;
+  margin: 20px 0;
+}
 
+.contact li {
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.6;
 
+}
+
+/* Optional: Add a custom bullet or icon */
+.contact li::before {
+  content: "\f005"; /* You can swap this with another emoji or icon */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+  color: #007BFF; /* Accent color */
+}
 
 .contact-form {
   max-width: 500px;
@@ -227,6 +249,25 @@ footer {
 
 .contact-form button:hover {
   background: #f59e0b;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #121212;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #b8860b;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: center;
+    background:#b8860b;
 }
 
 /* Responsive */
